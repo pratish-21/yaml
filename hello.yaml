@@ -3,8 +3,8 @@
 #ending of document ...
 
 #key value pair
-"apple" : "I am a red fruit"
-1:"my roll number"
+"apple": "I am a red fruit"
+1: "my roll number"
 ---
 #lists
 - apple
@@ -12,9 +12,13 @@
 - banana
 - Apple
 ---
-#identation is mandatory , this is block
-cities :
+#identation is mandatory , this is block , below one is without indentation this is array
+cities: 
  - mumbai
  - AP
  - telanagana
+---
+cities: [mumbai , AP , TS]
+---
+{mango: "is a fruit", age: 10}
 ...

@@ -1,0 +1,56 @@
+#String variables
+name: Pratish
+fruit: "apple"
+job: 'se'
+
+bio: |
+my name is pratish
+I am software engineer
+
+#write single line in multiple lines
+
+message: >
+this is 
+consider as a single line
+instead of 
+multiple lines
+
+#same as
+message: !!str this is  consider as a single line instead of multiple lines
+
+#intergers , floats
+
+number: 10
+marks: 99.9
+
+#boolean
+
+isbool: !!bool No # n , N , false , False , FALSE 
+#same for true -> yes , y , Y , Yes , YES
+
+#specify the type
+zero: !!int 0
+positivenum: !!int 45
+negativenum: !!int -45
+binarynum: !!int 010101
+octalnum: !!int 06754
+hexadecimal: !!int 0x45
+commavalue: !!int +54_000 #54,000
+
+#floating point numbers
+marks: !!float 56.79
+infinite: !!float .inf #infinity
+not a num: .nan
+
+#null
+name: !!null null #null , Null , NULL , ~
+~: this is a null
+
+#date
+date: !!timestamp 2025-03-07
+india time: 2025-03-07T02:59:43.10 +5:30
+no time zone: 2025-03-07T02:59:43.10 +5:30
+
+exponential numbers: 6.1E53
+
+
