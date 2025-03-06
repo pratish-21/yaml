@@ -1,0 +1,20 @@
+#YAML is  case sensintive
+# every document is differentiated by ---
+#ending of document ...
+
+#key value pair
+"apple" : "I am a red fruit"
+1:"my roll number"
+---
+#lists
+- apple
+- mango
+- banana
+- Apple
+---
+#identation is mandatory , this is block
+cities :
+ - mumbai
+ - AP
+ - telanagana
+...
