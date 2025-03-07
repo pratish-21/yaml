@@ -1,0 +1,49 @@
+name: pratish
+surname: "jangam"
+middle name: 'none'
+
+name: !!str pratish
+surname: !!str "jangam"
+middle name: !!str 'none'
+
+bio: |
+let's do this
+yaml on te way
+
+message: >
+no new comments 
+are required
+already in 
+high zone
+
+message: !!str new message on the way
+
+num: 10
+
+num1: !!int 10
+num2: !!int +11
+num3: !!int -11
+num4: !!int 0101
+num5: !!int 0654
+num5: !!int 0x23
+commavalue: !!int +540_000
+cvalue: 540,000
+
+bool: no
+isbool: !!bool yes
+
+marks: 90.88
+marks1: !!float 98.00
+infinite: !!float .inf
+notanum: .nan
+
+n: null
+j: !!null NULL
+
+exp: 2E4
+
+date: 2025-03-07
+date1: !!timestamp 2025-04-07
+time: 2025-03-07T12:00:00.10 #UTC
+
+indiantime: 2025-03-07T12:00:00.10 +5:30
