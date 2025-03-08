@@ -1,0 +1,88 @@
+#list or seq
+student: !!seq
+ - name
+ - marks
+ - age
+
+#same as above
+student : [name, marks, age]
+
+#some of the keys of the seq will be empty -> sparse seq
+sparse seq: 
+ - hey
+ - how
+ - 
+ - null
+ - you
+
+ #nested sequence
+ - 
+  - mango
+  - apple
+  - red
+-
+ - name
+ - rollno
+ - age
+
+#key value pairs is called a map
+!!map
+
+#nested map 
+name: pratish
+role: 
+ job: se
+ role: ta
+
+#same as
+name: pratish
+role: {job: se , role: ta}
+
+#pairs keys may have duplicate values
+
+pair example: !!pairs
+ - job: student
+ - job: teacher
+
+#same as 
+pair example: !!pairs [job: student, job: teacher]
+
+#set will allow to have only unique values
+names: !!set
+? pratish
+? jangam
+? sam
+
+#dictionary
+people: !!omap
+ - p1: 
+    name: pratish
+    age: 25
+    job: yes
+ - p2: 
+    name: unknown
+    age: 24
+    job: no
+
+#resusing some properties with anchors
+likes: &anchor
+ fav fruit: mango
+ dislike: apple
+
+person1: 
+ name: pratish
+ <<: *anchor
+ dislike: berries
+
+#this will look like
+ person1: 
+ name: pratish
+ fav fruit: mango
+ dislike: berries
+
+person2: 
+ name: pratish
+ fav fruit: mango
+ dislike: apple
+ 
+
