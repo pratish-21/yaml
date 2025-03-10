@@ -1,0 +1,165 @@
+#strings
+name: pratish
+surname: "jangam"
+lastname: 'jangam'
+
+name: !!str pratish
+surname: !!str "jangam"
+lastname: !!str 'jangam'
+
+#integers
+num1: 10
+num2: +11
+num3: -12
+num4: 0101
+num5: 067
+num6: 0x45
+
+num1: !!int 10
+num2: !!int +11
+num3: !!int -12
+num4: !!int 0101
+num5: !!int 067
+num6: !!int 0x45
+
+#float
+n1: 7.9
+n2: .inf
+n3: .nan
+
+n1: !!float 7.9
+n2: !!float .inf
+n3: !!float .nan
+
+#exponential
+exp: 5E2
+
+#multiple lines
+bio: |
+ new
+ multi
+ line
+
+#multi lines in single line
+message: >
+ this is a
+ multi line
+ in single line
+
+#date and  time
+date: 2025-03-10T12.00.00.000Z
+
+date: !!timestamp 2025-03-10T12.00.00.000Z
+
+#bool
+isbool: on
+
+isbool: !!isbool on
+
+#null
+m: null
+
+n: !!null null
+
+#list or seq or array , - (hypen stands for a array)
+student: 
+ - name
+ - age
+ - marks
+
+student: [name , age , marks]
+
+student: !!seq
+ - name
+ - marks
+ - age
+
+#sparse seq is array with null values allowed
+
+sparse:
+ -
+ - new
+ - 
+ - old
+
+sparse: !!seq
+ -
+ - new
+ - 
+ - old
+
+#nested sequence or array
+-
+ - name
+ - age
+ - marks
+-
+ - bio
+ - new
+ - old
+
+#maps or objects -> key value pairs
+name: pratish #key value pairs
+
+name: 
+ newname: jangam
+ nname: pratish
+
+name: !!map
+ newname: jangam
+ nname: pratish
+
+name: {newname: jangam , nname: pratish}
+
+#pairs are arrays with duplicate keys
+pair: 
+ - job: student
+ - job: teacher
+
+pair: !!pairs
+ - job: student
+ - job: teacher
+
+#set will allow to have only unique values
+names: 
+? pratish
+? jangam
+? sam
+
+names: !!set
+? pratish
+? jangam
+? sam
+
+#dictionary omap
+name: 
+ - p1: 
+    n: pratish
+    age: 25
+    height: 5.4
+ - p2: 
+    n: srinu
+    age: 25
+    height: 5.4
+
+name: !!omap
+ - p1: 
+    n: pratish
+    age: 25
+    height: 5.4
+ - p2: 
+    n: srinu
+    age: 25
+    height: 5.4
+
+#anchor 
+like: &anchor
+ name: pratish
+ lastname: jangam
+
+person:
+ test: 123
+ <<: *anchor
+
+
+
