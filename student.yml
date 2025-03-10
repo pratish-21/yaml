@@ -1,0 +1,24 @@
+name: pratish
+age: 25
+salary: 12345.7
+cities: 
+ - mumbai
+ - ap
+ - telangana
+contact: 
+ mobile: 123456789
+ email: qwerty@gmail.com
+ profile: 
+  - linked: false
+  - teitter: on
+  - helm: y
+
+person: 
+ - p1: 
+    name: chotta bheem
+    age: 10
+    job: air ofrce
+ - p2:
+    name: kailaya
+    age: 10
+    job: fighter
