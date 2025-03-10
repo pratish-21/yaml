@@ -29,7 +29,8 @@ sparse seq:
 !!map
 
 #nested map 
-name: pratish
+name: pratish #key value pair
+
 role: 
  job: se
  role: ta

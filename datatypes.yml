@@ -3,17 +3,17 @@ name: Pratish
 fruit: "apple"
 job: 'se'
 
+#for multi line in yaml
 bio: |
-my name is pratish
-I am software engineer
+ my name is pratish
+ I am software engineer
 
 #write single line in multiple lines
-
 message: >
-this is 
-consider as a single line
-instead of 
-multiple lines
+ this is 
+ consider as a single line
+ instead of 
+ multiple lines
 
 #same as
 message: !!str this is  consider as a single line instead of multiple lines
@@ -27,6 +27,7 @@ marks: 99.9
 
 isbool: !!bool No # n , N , false , False , FALSE 
 #same for true -> yes , y , Y , Yes , YES
+#same for on and off
 
 #specify the type
 zero: !!int 0
